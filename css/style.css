@@ -9,7 +9,7 @@ display: flex;
 }
 .container {
   margin: 0 auto;
-  max-width: 1900px;
+  max-width: 1200px;
   max-height: 600px;
  }
 .row::before,
@@ -27,8 +27,11 @@ display: flex;
   color: black;
   font-size: 20px;
   font-family: scada;
+  margin-top: 5px;
 }
-
+.nav-menu {
+  height: 60px;
+}
 a:hover {
   color: green;
 }
@@ -169,7 +172,7 @@ news, h1 {
 .row > .col-4 > img {
   width: 200px;
   height: 150px;
-  margin-left: 140px;
+  margin-left: 100px;
 }
 
 p {
@@ -178,6 +181,7 @@ p {
 
 .row.news {
   margin-top: 25px;
+  margin-bottom: 35px;
 }
 
 .button, button {
@@ -197,18 +201,61 @@ p {
   width: 100%;
   padding: 10px;
 }
-.gallery-container > div > img {
+.gallery-container > .photo > img {
   width: 100%;
-  height: 620px;
+  height: 568px;
+  position: relative;
+   opacity: 0.5;
 }
-.header-aktualnosci > h1{
+.text {
+  position: absolute;
+  top: 450px;
+  margin-left: 55px;
+  font-size: 30px;
+  color: white;
+}
+.header-aktualnosci > h1 {
   font-size: 32px;
+  padding-top: 40px;
+  margin-bottom: 10px;
 }
-@media only screen and (max-width: 700px) {
-  .rwd-news {
-    background-color: red;
-    display: block;
-    font-size: 14px;
+h1 {
+  margin-top: 0px;
+}
+@media only screen and (min-width: 1880px) {
+  .gallery-container > .photo > img {
+    width: 100%;
+    height: 870px;
   }
+}
+.icon-style > .row {
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 1880px) {
+.row > .col-4 > img {
+  width: 200px;
+  height: 150px;
+  margin-left: 190px;
+  }
+}
+@media only screen and (min-width: 1880px) {
+.text {
+  position: absolute;
+  top: 550px;
+  margin-left: 55px;
+  font-size: 35px;
+  color: white;
+  }
+}
+.aboutUs {
+background-color: #F2F9F2;
+}
+.offer > p {
+width: 100%;
+text-align: center;
+margin-top: 35px;
+}
+.board > .row > .col-4 > p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
